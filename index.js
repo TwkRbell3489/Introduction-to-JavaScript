@@ -8,6 +8,8 @@ This will usually entail console logging the answer directly or console logging 
 returns a value, that value will be logged to the console.  An example of this would be:  console.log(theFunction(value1,value2))
 */
 
+
+
 /*
 Task 1a - Voting Age
 
@@ -18,6 +20,9 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge=24
+if (votingAge>=18)
+ (console.log(true))
 
 
 /*
@@ -30,7 +35,11 @@ Do the following:
 
    HINT: no function required
 */
-
+let x='5'
+let y='1'
+if (y==x){
+  x=1}
+  console.log(x)
 
 
 
@@ -46,7 +55,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let theYear="1999"
+return(parseInt(theYear))
 
 
 /*
@@ -58,9 +68,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+  return(a*b)
+}
 
 
 
@@ -74,8 +84,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+ let dogYears=(7*age);
+ console.log(15)
 }
 
 
@@ -200,7 +211,7 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
+  /*
 function grade(num){
     if(num < 100 && num >= 90){
       return 'you got an A';
@@ -237,7 +248,7 @@ function vowelCounter(/*add your code here*/) {
 }
 
 
-
+/*
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
     //console.log('its working');
