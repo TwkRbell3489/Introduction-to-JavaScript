@@ -126,15 +126,15 @@ function hungryDog(/*add your code here*/){
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-// Rock, Paper, Scissors - Let's play against the computer!
+// Rock, Paper, Scissors - Let's play against the numb!
 /*
-Create a global variable that randomly generates the computer's choice
+Create a global variable that randomly generates the numb's choice
 Use Math.random to determine the computers choice (Math.random gives a random number between 0 and 1)
 
 HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 
 Use the game function below to do the following:
-  1. Receive 2 parameters the user's choice and the computer's choice
+  1. Receive 2 parameters the user's choice and the numb's choice
   2. Return whether the user won, lost, or tied based on these rules of the game described below - the strings returned need to match the strings below exactly.
    - win should return "you win!"
    - lose should return "you lose!"
@@ -145,11 +145,36 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+function game(user,comp){
+   let user=("rock","paper","scissors");
+   let comp=Math.floor(Math.random()*3);
+   if(user="rock"){
+     numb=0;
+   }
+   if(user="paper"){
+     numb=1;
+   }
+   if (user="scissors"){
+     numb=2;
+   }
+
+   if(numb===comp){
+      return ("its a tie");
+   } else if (numb===0,comp===2){
+      return ("You win");
+   } else if (numb===0,comp===1){
+      return ("you loose");
+   } else if (numb===1,comp===0){
+      return ("you win");
+   } else if (numb===1,comp===2){
+      return ("you loose");
+   } else if (numb===2,comp===1){
+      return ("you win");
+   } else if (numb===2,comp===0){
+      return ("you loose");
+   }
+  
 }
-  
-  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -162,8 +187,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km=mi/0.62137){
+   let kilometers=12;
+   let miles= kilometers/'1.609';
+   console.log(miles)
   }
 
 
@@ -176,10 +203,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
- 
+function feet(ft=cm*0.032808/){
+    let cm= feet/3.2808;
+    let rounded=cm.toFixed(2);
+    return rounded (+"cm");
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -192,11 +220,23 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(int bottles="99"){
+    string (word) ="bottles";
+    }
+    while (bottles >0);
+    System.out.printf("%d %s of beer on the wall.\n", bottles,word);
+    System.out.printf("%d %s of beer.\n", bottles, word);
+    System.out.println("take on dow,pass it around.")
+    bottles--;
+      if(bottles==1){
+        word=bottles;
+      }
+      if(bottles==0){
+        word=bottle;
+      }
+      ("%d %s of beer on the wall.\n", bottles,word);
 
-
+\*
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
@@ -211,18 +251,18 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  /*
-function grade(num){
-    if(num < 100 && num >= 90){
-      return 'you got an A';
-    }else if(num <90 && num >= 80){
-      return 'you got a B';
-    }else if(num < 80 && num >= 70){
-      return 'you got a C';
-    }else if(num < 70 && num >= 60){
-      return 'you got a D';
-    }else if(num < 60){
-      return 'you got an F';
+
+  (num) => {
+    if (num < 100 && num >= 90) {
+      return 'you got an A'
+    } else if (num < 90 && num >= 80) {
+      return 'you got a B'
+    } else if (num < 80 && num >= 70) {
+      return 'you got a C'
+    } else if (num < 70 && num >= 60) {
+      return 'you got a D'
+    } else if (num < 60) {
+      return 'you got an F'
     }
   }
   
