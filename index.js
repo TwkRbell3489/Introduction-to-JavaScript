@@ -220,8 +220,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(int bottles="99"){
-    string (word) ="bottles";
+function annoyingSong(_int bottles="99"){
+    string word =("bottles")
     }
     while (bottles >0);
     System.out.printf("%d %s of beer on the wall.\n", bottles,word);
